@@ -26,11 +26,11 @@ public class Pertemuan2Java {
         
         Scanner input_pertama = new Scanner(System.in);
         
-        System.out.println(nilaiA);
-        System.out.println(nilaiB);
-        System.out.println(pi);
-        System.out.println(eksponen);
-        System.out.println(isPlus);
+        System.out.println("nilaiA = " + nilaiA);
+        System.out.println("nilaiB = " + nilaiB);
+        System.out.println("nilai pi = " + pi);
+        System.out.println("nilai eksponen = " + eksponen);
+        System.out.println("boolean berupa " + isPlus);
         System.out.println("Silakan ketik apapun di blank space bawah ini");
         String inp = input_pertama.nextLine();
         System.out.println("Yang kamu ketik adalah " + inp);
