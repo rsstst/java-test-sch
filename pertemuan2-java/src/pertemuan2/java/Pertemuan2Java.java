@@ -31,7 +31,7 @@ public class Pertemuan2Java {
         System.out.println(pi);
         System.out.println(eksponen);
         System.out.println(isPlus);
-        System.out.println("Silakan ketik apa yang kamu inginkan di blank space bawah ini");
+        System.out.println("Silakan ketik apapun di blank space bawah ini");
         String inp = input_pertama.nextLine();
         System.out.println("Yang kamu ketik adalah " + inp);
          
