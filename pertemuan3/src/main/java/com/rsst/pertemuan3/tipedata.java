@@ -71,4 +71,8 @@ public class tipedata {
         System.out.println("\nTipe Data Boolean");
         System.out.println("Boolean: " + tipeBoolean);
     }
+    
+    void FungsiKedua() {
+        System.out.println("Fungsi kedua");
+    }
 }
