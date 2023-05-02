@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  * @author C-7
  */
-public class Pertemuan5 {
+public class FungsiMetode {
 //public class KelasUtama {
     public static void main(String[] args){
     int varInteger;
