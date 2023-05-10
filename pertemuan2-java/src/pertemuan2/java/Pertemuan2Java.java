@@ -24,7 +24,7 @@ public class Pertemuan2Java {
         
         boolean isPlus = true;
         
-        Scanner inp = new Scanner(System.in); //main inp scanner func
+        Scanner input = new Scanner(System.in); //main inp scanner func
             
             System.out.println("nilaiA = " + nilaiA);
             System.out.println("nilaiB = " + nilaiB);
@@ -32,10 +32,10 @@ public class Pertemuan2Java {
             System.out.println("nilai eksponen = " + eksponen);
             System.out.println("boolean berupa " + isPlus);
             System.out.println("Masukkan nilaiA baru");
-            nilaiA = inp.nextInt();
+            nilaiA = input.nextInt();
             System.out.println("Nilai A sekarang adalah " + nilaiA);
             System.out.println("Rubah angka pi dengan angka yang tidak masuk akal");
-            pi = inp.nextDouble();
+            pi = input.nextDouble();
             System.out.println("Sekarang nilainya bukan pi, melainkan " + pi);
         }
          
