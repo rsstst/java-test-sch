@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.rsst.pertemuan4;
+package com.rsst.pertemuan4kuis;
 import java.util.Scanner;
 /**
  *
