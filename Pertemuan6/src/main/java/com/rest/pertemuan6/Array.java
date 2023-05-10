@@ -13,10 +13,12 @@ import java.util.Scanner;
 public class Array {
     public static void main(String[] args) {
         //Latihan48();
-        Latihan49();
+        //Latihan49();
+    	Latihan50();
     }
     
     //Latihan 48 - Restu Andra Ahmad Saeroji (22201170)
+    //Basic Array Listing
     static void Latihan48(){
         String[ ] namaPlanet = { "Merkurius", "Venus", "Bumi", "Mars",
                                 "Jupiter", "Saturnus", "Uranus", "Neptunus"};
@@ -34,12 +36,13 @@ public class Array {
     }
 
     //Latihan 49 - Restu Andra Ahmad Saeroji (22201170)
+    //Find Order
     static void Latihan49(){
         try (Scanner input = new Scanner(System.in)) {
             int [] nomorOrder = {123123,431414,542637,1231236,86575,1234};
             int dicari;
 
-            System.out.println("Sekarang ada" + nomorOrder.length + "order di database");
+            System.out.println("Sekarang ada " + nomorOrder.length + " order di database");
             System.out.println("Order: ");
             for (int num : nomorOrder) {
                 System.out.println(num + " ");
@@ -58,5 +61,33 @@ public class Array {
                 }
             }
         }
+    }
+    
+    //Latihan 50 - Restu Andra Ahmad Saeroji (22201170)
+    //Item not found
+    static void Latihan50(){
+    	try (Scanner input = new Scanner(System.in)){
+    		
+    		String [] pahlawan = { "Ironman", "Hawkeye", "Captain America", "Hulk", "Spiderman",
+    				"Thor", "Black Panther", "Captain Marvel", "Black Widow", "Scarlet Witch" };
+    		
+    		String tebak;
+    		boolean ketemu;
+    		
+    		System.out.println("Kuis!");
+    		System.out.println("Sebutkan pahlawan yang ada di Marvel Universe");
+    		tebak = input.nextLine();
+    		ketemu = false;
+    		for (String p : pahlawan) {
+    			if (tebak.equals(p)) {
+    				System.out.println("Jawabanmu benar!");
+    				ketemu = true;
+    			}
+    		}
+    		
+    		if (ketemu == false) {
+    			System.out.println("Jawabanmu salah..");
+    		}
+    	}
     }
 }
