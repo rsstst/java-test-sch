@@ -40,11 +40,11 @@ public class Array {
     //Find Order
     static void Latihan49(){
         try (Scanner input = new Scanner(System.in)) {
-            int [] nomorOrder = {123123,431414,542637,1231236,86575,1234};
+            int [] nomorOrder = {1, 2, 3, 4, 5};
             int dicari;
 
             System.out.println("Sekarang ada " + nomorOrder.length + " order di database");
-            System.out.println("Order: ");
+            System.out.print("Order: ");
             for (int num : nomorOrder) {
                 System.out.println(num + " ");
             }
@@ -55,17 +55,18 @@ public class Array {
             for (int num : nomorOrder){
                 if (num == dicari){
                     System.out.println("Order " + num + " ditemukan");
+                    break;
                 }
                 else {
-                    System.out.println("Order tidak ditemukan");
-                    break;
+                	System.out.println("Order tidak ditemukan..");
+                	break;
                 }
             }
         }
     }
     
     //Latihan 50 - Restu Andra Ahmad Saeroji (22201170)
-    //Item not found - TODO
+    //Item not found
     static void Latihan50(){
     	try (Scanner input = new Scanner(System.in)){
     		
@@ -73,11 +74,14 @@ public class Array {
     				"Thor", "Black Panther", "Captain Marvel", "Black Widow", "Scarlet Witch" };
     		
     		String tebak;
-    		boolean ketemu;
+    		//boolean ketemu;
     		
     		System.out.println("Kuis!");
     		System.out.println("Sebutkan pahlawan yang ada di Marvel Universe");
     		tebak = input.nextLine();
+    		
+    		//Boolean
+    		/*
     		ketemu = false;
     		for (String p : pahlawan) {
     			if (tebak.equals(p)) {
@@ -89,13 +93,27 @@ public class Array {
     		if (ketemu == false) {
     			System.out.println("Jawabanmu salah..");
     		}
+    		*/
+    		
+    		//Counting
+    		int num = 0;
+    		for (String p : pahlawan) {
+    			if (tebak.equals(p)) {
+    				System.out.println("Jawabanmu benar!");
+    				num += 1;
+    			}
+    		}
+    		
+    		if (num == 0) {
+    			System.out.println("Jawabanmu salah..");
+    		}
     	}
     }
     
     //Latihan 51 - Restu Andra Ahmad Saeroji (22201170)
     //Array Slot Access
     static void Latihan51() {
-    	int [] arr = new int[7];
+    	int [] arr = new int[12];
     	
     	//Menggunakan for loop untuk mengakses array
     	for (int i=0; i < arr.length; i++) {
@@ -163,3 +181,5 @@ public class Array {
     	System.out.println();
     }
 }
+   
+    
