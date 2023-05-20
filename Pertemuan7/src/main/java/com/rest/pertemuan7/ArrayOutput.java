@@ -18,21 +18,21 @@ public class ArrayOutput {
         int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         String[] nama = {"Kevin", "Dimas", "Kholid", "Tamalla", "Bintang"};
 
-        PrintWriter fileout = new PrintWriter("teks.txt");
-        fileout.println("Nama saya Restu Andra");
-        fileout.println("NIM saya 22201170");
-        fileout.println("Umur : 19");
-        fileout.println("Tinggi badan : 167");
-        fileout.println("Berat badan : tidak tahu");
-        fileout.println("");
+        PrintWriter file = new PrintWriter("teks.txt");
+        file.println("Nama saya Restu Andra");
+        file.println("NIM saya 22201170");
+        file.println("Umur : 19");
+        file.println("Tinggi badan : 167");
+        file.println("Berat badan : tidak tahu");
+        file.println("");
         for (int num : arr) {
-            fileout.println(num);
+            file.println(num);
         }
-        fileout.println("");
+        file.println("");
         for (String str : nama) {
-            fileout.println(str);
+            file.println(str);
         }
-        fileout.close();
+        file.close();
 
         for (int num : arr) {
             System.out.println(num + " ");

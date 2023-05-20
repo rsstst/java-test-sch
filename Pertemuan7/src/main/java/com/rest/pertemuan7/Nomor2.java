@@ -10,8 +10,14 @@ import java.util.Scanner;
  *
  * @author C-17
  */
+
 public class Nomor2 {
     public static void main(String [] args) throws Exception{
-        Scanner reader = new Scanner(new File("datadiri.txt"));
+        Scanner reader = new Scanner(new File("Pertemuan7/datadiri.txt"));
+
+        while (reader.hasNextLine()) {
+        	String text = reader.nextLine();
+        	System.out.println(text);
+        }
     }
 }
