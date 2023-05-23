@@ -36,6 +36,7 @@ public class UTS {
         restu.tb = "167";
         restu.alamat = "Banyuwangi";
         
+        //output file
         PrintWriter file = new PrintWriter("output.txt");
         for (String str : nama){
             file.print(str + ", ");
@@ -53,6 +54,7 @@ public class UTS {
         
         file.close();
         
+        //membaca file
         Scanner reader = new Scanner(new File("output.txt"));
         
         while (reader.hasNextLine()){
