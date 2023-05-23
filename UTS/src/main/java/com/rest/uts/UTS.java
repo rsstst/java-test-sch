@@ -14,6 +14,9 @@ import java.io.File;
  * @author C-17
  */
 
+//RESTU ANDRA AHMAD SAEROJI 22201170
+//UTS Pemrogaman Berbasis Obyek
+
 class datadiri {
     String nama;
     String umur;
