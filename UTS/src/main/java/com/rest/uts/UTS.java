@@ -38,13 +38,14 @@ public class UTS {
         
         //output file
         PrintWriter file = new PrintWriter("output.txt");
-        for (String str : nama){
-            file.print(str + ", ");
-        }
-        file.println();
         for (int num : arr){
             file.print(num + ", ");
         }
+        file.println();
+        for (String str : nama){
+            file.print(str + ", ");
+        }
+
         file.println();
         file.println("Nama : " + restu.nama);
         file.println("Umur : " + restu.umur);
