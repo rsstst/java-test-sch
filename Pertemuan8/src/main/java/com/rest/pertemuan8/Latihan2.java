@@ -15,6 +15,10 @@ public class Latihan2 {
         Mobil mobil1 = new Mobil("Merah", "Toyota", 250, 120000000);
         mobil1.getInfo();
         mobil1.maju();
+        
+        Mobil mobil2 = new Mobil("Biru", "Lamborghini", 750, 900000000);
+        mobil2.getInfo();
+        mobil2.maju();
     }
 }
 
@@ -24,18 +28,18 @@ public class Latihan2 {
         int kecepatan;
         int harga;
     
-    public Mobil(String warna, String model, int kecepatan, int harga){
+    Mobil(String warna, String model, int kecepatan, int harga){
         this.warna = warna;
         this.model = model;
         this.kecepatan = kecepatan;
         this.harga = harga;
     }
     
-    public void maju(){
+    void maju(){
         System.out.println("Mobil maju");
     }
     
-    public void mundur(){
+    void mundur(){
         System.out.println("Mobil mundur");
     }
     
