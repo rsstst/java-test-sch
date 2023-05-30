@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author C-8
  */
-public class Pertemuan8 {
+public class Latihan1 {
 
     public static void main(String[] args) {
         int varInteger;
@@ -26,8 +26,7 @@ public class Pertemuan8 {
     
     }
 
-    
-
+//Latihan 1
     static void sayHello() {
         System.out.println("Hello, ini fungsi void");
         System.out.println("Fungsi void tidak ada return");
@@ -63,5 +62,7 @@ public class Pertemuan8 {
         nilaiInput = inputScanner.nextInt();
         return nilaiInput;
     }
-
+//End Latihan 1
+    
+    
 }
