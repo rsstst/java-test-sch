@@ -6,6 +6,7 @@ package penjualan;
 
 import barang.Mobil;
 import java.util.List;
+import java.util.Scanner;
 
 /**
  *
@@ -17,10 +18,15 @@ public class Main {
 
         // Tambah mobil ke dalam daftar
         Mobil mobil1 = new Mobil("Toyota", "Avanza", 2021, 150000000);
-        penjualanMobil.tambahMobil(mobil1);
+        penjualanMobil.beliMobil(mobil1);
 
         Mobil mobil2 = new Mobil("Honda", "Civic", 2022, 200000000);
-        penjualanMobil.tambahMobil(mobil2);
+        penjualanMobil.beliMobil(mobil2);
+        
+        System.out.printf("Modal kamu sekarang " + "%,.2f", penjualanMobil.modal);
+        System.out.println();
+        System.out.printf("Nilai aset kamu sekarang " + "%,.2f", penjualanMobil.nilaiAsset);
+        System.out.println();
 
         // Cari mobil berdasarkan merek
         List<Mobil> hasilPencarian = penjualanMobil
@@ -31,6 +37,14 @@ public class Main {
         }
 
         // Hapus mobil dari daftar
-        penjualanMobil.hapusMobil(mobil2);
+        penjualanMobil.jualMobil(mobil2, 210000000);
+        
+        System.out.println("Ada mobil yang dijual dan sekarang");
+        System.out.printf("Modal kamu sekarang " + "%,.2f", penjualanMobil.modal);
+        System.out.println();
+        System.out.printf("Nilai aset kamu sekarang " + "%,.2f", penjualanMobil.nilaiAsset);
+        System.out.println();
+
+        
     }
 }

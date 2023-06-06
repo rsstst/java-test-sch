@@ -13,8 +13,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PenjualanMobil {
-    private double modal = 10000000000.0;
-    private double nilaiAsset = 0.0;
+    double modal = 10000000000.0;
+    double nilaiAsset = 0.0;
     
     private List<Mobil> daftarMobil;
 
@@ -22,12 +22,16 @@ public class PenjualanMobil {
         daftarMobil = new ArrayList<>();
     }
 
-    public void tambahMobil(Mobil mobil) {
+    public void beliMobil(Mobil mobil) {
         daftarMobil.add(mobil);
+        modal = modal - mobil.getHarga();
+        nilaiAsset = nilaiAsset + mobil.getHarga();
     }
 
-    public void hapusMobil(Mobil mobil) {
+    public void jualMobil(Mobil mobil, double hargaJual) {
         daftarMobil.remove(mobil);
+        modal = modal + mobil.getHarga() + hargaJual;
+        nilaiAsset = nilaiAsset - mobil.getHarga() + hargaJual;
     }
 
     public List<Mobil> cariMobilBerdasarkanMerek(String merek) {
@@ -39,13 +43,6 @@ public class PenjualanMobil {
         }
         return hasilPencarian;
     }
-    
-    public void jualMobil(Mobil yangdiJual){
-        
-    }
-    
-    public
-
-    // Metode lain untuk mencari mobil berdasarkan kriteria lainnya
 }
-
+    
+    // Metode lain untuk mencari mobil berdasarkan kriteria lainnya
