@@ -8,19 +8,15 @@ import barang.Mobil;
 import java.util.List;
 import java.util.Scanner;
 
-/**
- *
- * @author budi
- */
 public class Main {
     public static void main(String[] args) {
         PenjualanMobil penjualanMobil = new PenjualanMobil();
 
         // Tambah mobil ke dalam daftar
-        Mobil mobil1 = new Mobil("Toyota", "Avanza", 2021, 150000000);
+        Mobil mobil1 = new Mobil("Toyota", "Avanza", 2021, 110000000);
         penjualanMobil.beliMobil(mobil1);
 
-        Mobil mobil2 = new Mobil("Honda", "Civic", 2022, 200000000);
+        Mobil mobil2 = new Mobil("Honda", "Civic", 2022, 300000000);
         penjualanMobil.beliMobil(mobil2);
         
         System.out.printf("Modal kamu sekarang " + "%,.2f", penjualanMobil.modal);
@@ -37,7 +33,7 @@ public class Main {
         }
 
         // Hapus mobil dari daftar
-        penjualanMobil.jualMobil(mobil2, 210000000);
+        penjualanMobil.jualMobil(mobil2, 310000000);
         
         System.out.println("Ada mobil yang dijual dan sekarang");
         System.out.printf("Modal kamu sekarang " + "%,.2f", penjualanMobil.modal);

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/UTS/pom.xml" />
+        <option value="$PROJECT_DIR$/pertemuan3/pom.xml" />
+        <option value="$PROJECT_DIR$/pertemuan5/pom.xml" />
+        <option value="$PROJECT_DIR$/Pertemuan6/pom.xml" />
+        <option value="$PROJECT_DIR$/Pertemuan7/pom.xml" />
+        <option value="$PROJECT_DIR$/Pertemuan8/pom.xml" />
+        <option value="$PROJECT_DIR$/pertemuan4kuis/pom.xml" />
+        <option value="$PROJECT_DIR$/PenjualanMobil-Pertemuan9/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

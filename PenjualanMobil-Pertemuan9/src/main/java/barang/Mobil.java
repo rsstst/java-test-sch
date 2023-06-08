@@ -4,10 +4,6 @@
  */
 package barang;
 
-/**
- *
- * @author budi
- */
 public class Mobil {
     protected String merek;
     private String model;
