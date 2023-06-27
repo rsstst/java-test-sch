@@ -1,3 +1,5 @@
+package com.rest.pertemuan11;
+
 // Interface untuk Kendaraan
 
 interface Kendaraan {
@@ -101,9 +103,16 @@ class Dealer {
 public class main {
 
     public static void main(String[] args) {
-        MobilBaru mobilBaru = new MobilBaru("Toyota", "Avanza", "3 tahun");
-        MobilBekas mobilBekas = new MobilBekas("Honda", "Civic", 2018, 200000000);
+        MobilBaru mobilBaru = new MobilBaru("Toyota", "Avanza", "1 tahun");
+        MobilBekas mobilBekas = new MobilBekas("Honda", "Civic", 2023, 300000000);
         Dealer dealer = new Dealer("Mobilindo", mobilBaru, mobilBekas);
         dealer.info();
+        
+        System.out.println();
+        
+        MobilBaru mobilBaru2 = new MobilBaru("Daihatsu", "Ayla", "2 tahun");
+        MobilBekas mobilBekas2 = new MobilBekas("Honda", "Civic", 2018, 150000000);
+        Dealer dealer2 = new Dealer("Virtual Reality", mobilBaru2, mobilBekas2);
+        dealer2.info();
     }
 }
