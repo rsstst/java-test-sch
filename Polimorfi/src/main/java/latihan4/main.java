@@ -16,18 +16,40 @@ public class main {
         
         System.out.println("Array list memiliki ukuran: " + arr.size());
         
-        arr.add("");
-        arr.add("");
-        arr.add("");
-        arr.add("");
-        arr.add("");
+        arr.add("1");
+        arr.add("2");
+        arr.add("3");
+        arr.add("4");
+        arr.add("5");
         
         System.out.println("Array list memiliki ukuran: " + arr.size());
         System.out.println("Isinya saat ini " + arr);
         showList(arr);
         
-        arr.add(3, "");
+        arr.add(3, "3a");
         showList(arr);
+
+        int i = arr.indexOf("1");
+        System.out.println(arr.get(i) + " terdapat di slot " + i);
+        arr.remove(1);
+        showList(arr);
+
+        arr.add(1, "8");
+        showList(arr);
+
+        arr.remove(5);
+        arr.remove(4);
+        arr.remove(2);
+        arr.remove(0);
+        showList(arr);
+
+        i = arr.indexOf("8");
+        String removed = arr.remove(i);
+        arr.add(i, removed);
+        showList(arr);
+
+        System.out.println("Isi array saat ini " + arr);
+
     }
     
     
@@ -45,6 +67,16 @@ public class main {
     }
     
     public static String centerPad(String s, int width){
+
         int totalSpaces = width - s.length();
+        int leftSide = totalSpaces / 2;
+        int rightSide = totalSpaces - leftSide;
+        String out = "";
+        for (int i = 0; i<leftSide; i++)
+            out += " ";
+        out += s;
+        for (int i = 0; i<rightSide; i++)
+            out += " ";
+        return out;
     }
 }

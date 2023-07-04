@@ -18,7 +18,8 @@ public class Main {
 
         Mobil mobil2 = new Mobil("Honda", "Civic", 2022, 300000000);
         penjualanMobil.beliMobil(mobil2);
-        
+
+        //Print out modal dan asset sebelum di update
         System.out.printf("Modal kamu sekarang " + "%,.2f", penjualanMobil.modal);
         System.out.println();
         System.out.printf("Nilai aset kamu sekarang " + "%,.2f", penjualanMobil.nilaiAsset);
@@ -34,7 +35,9 @@ public class Main {
 
         // Hapus mobil dari daftar
         penjualanMobil.jualMobil(mobil2, 310000000);
-        
+
+
+        //Print out modal dan asset yang telah di update
         System.out.println("Ada mobil yang dijual dan sekarang");
         System.out.printf("Modal kamu sekarang " + "%,.2f", penjualanMobil.modal);
         System.out.println();
